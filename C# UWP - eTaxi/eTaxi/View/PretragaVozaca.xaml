@@ -1,0 +1,85 @@
+﻿<Page
+    x:Class="eTaxi.PretragaVozača"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:eTaxi"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="Orange">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="0.6*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="5*"/>
+        </Grid.RowDefinitions>
+
+        <TextBlock Grid.Row="0" Grid.Column="0" HorizontalAlignment="Center" VerticalAlignment="Center"
+                   Margin="5"  Text="Pretraga Vozača" FontSize="20"/>
+
+        <Button Grid.Row="1" Grid.Column="0" HorizontalAlignment="Right" VerticalAlignment="Center"
+                Margin="10" Name="SearchButton" Width="60"
+            Content="Traži"
+         ></Button>
+
+        <TextBox  Grid.Row="1" Grid.Column="0" Name="SearchTextBox"  Width="200" HorizontalAlignment="Center" 
+                  VerticalAlignment="Center"
+                  Margin="10"
+         ></TextBox>
+
+        <TextBlock Grid.Row="1" Grid.Column="0"  HorizontalAlignment="Left" VerticalAlignment="Center"
+                   Text="Vozač:" Margin="10" FontSize="20"
+         ></TextBlock>
+
+        <CheckBox Grid.Row="2" Grid.Column="0" Name="MyCheckBox" HorizontalAlignment="Center" VerticalAlignment="Center"
+                  Content="Označi sve"  Click="MyCheckBox_Click"/>
+       
+
+        <CheckBox Grid.Row="3" Grid.Column="0" Name="MyCheckBox1" HorizontalAlignment="Center" VerticalAlignment="Center"
+                  Content="Odobreni" />
+
+        <Ellipse x:Name="slikaodobreni" Grid.Row="3" Grid.Column="0"  HorizontalAlignment="Left" Margin="40,0,10,0" VerticalAlignment="Center"
+                     Width="55" Height="55">
+            <Ellipse.Fill>
+                <ImageBrush ImageSource="/Assets/odobren.jpg" Stretch="Fill" >
+                </ImageBrush>
+            </Ellipse.Fill>
+        </Ellipse>
+
+
+        <CheckBox Grid.Row="4" Grid.Column="0" Name="MyCheckBox2" HorizontalAlignment="Center" VerticalAlignment="Center"
+                  Content="Suspendovani" />
+
+        <Ellipse x:Name="slikasuspendovani" Grid.Row="4" Grid.Column="0"  HorizontalAlignment="Left" Margin="40,0,10,0" VerticalAlignment="Center"
+                     Width="55" Height="55">
+            <Ellipse.Fill>
+                <ImageBrush ImageSource="/Assets/suspendovan.jpg" Stretch="Fill" >
+                </ImageBrush>
+            </Ellipse.Fill>
+        </Ellipse>
+
+        <CheckBox Grid.Row="5" Grid.Column="0" Name="MyCheckBox3" HorizontalAlignment="Center" VerticalAlignment="Center"
+                  Content="Neodobreni" />
+
+
+        <Ellipse x:Name="slikaneodobreni" Grid.Row="5" Grid.Column="0"  HorizontalAlignment="Left" Margin="40,0,10,0" VerticalAlignment="Center"
+                     Width="55" Height="55">
+            <Ellipse.Fill>
+                <ImageBrush ImageSource="/Assets/neodobren.jpg" Stretch="Fill" >
+                </ImageBrush>
+            </Ellipse.Fill>
+        </Ellipse>
+
+
+        <ListBox Margin="20" Grid.Row="6" Grid.Column="0">
+            <ListBoxItem>Petar Pejović</ListBoxItem>
+            <ListBoxItem>Marko Nedić</ListBoxItem>
+            <ListBoxItem>Anja Plakalović</ListBoxItem>
+        </ListBox>
+
+    </Grid>
+</Page>

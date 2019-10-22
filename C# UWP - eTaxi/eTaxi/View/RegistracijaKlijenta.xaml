@@ -1,0 +1,59 @@
+﻿<Page
+    x:Class="eTaxi.RegistracijaKlijenta"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:eTaxi"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+
+    <Grid Name ="grd" 
+        Background="Orange">
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="3*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="3*" />
+            <RowDefinition Height="1.2*" />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+
+        <TextBlock Grid.Column="0" Grid.Row="0" HorizontalAlignment="Center" VerticalAlignment="Top" Grid.ColumnSpan="2"
+                   Margin="20" Text="Unesite podatke:" FontSize="25" Foreground="DarkBlue"/>
+        <TextBox x:Name="textBoxIme" HorizontalAlignment="Right" Margin="5" PlaceholderText="Ime" VerticalAlignment="Bottom"
+                 Width="130" FontSize="20" />
+        <TextBox x:Name="textBoxPrezime" HorizontalAlignment="Left" Margin="5" PlaceholderText="Prezime" VerticalAlignment="Bottom"
+                 Width="130" FontSize="20" Grid.Row="0" Grid.Column="1"/>
+        <TextBox x:Name="textBoxEMail" HorizontalAlignment="Center" Margin="5" PlaceholderText="E-mail" 
+                 VerticalAlignment="Center" Width="270" FontSize="20" Grid.Row="1" Grid.ColumnSpan="2"/>
+        <PasswordBox x:Name="passwordBoxLozinka" HorizontalAlignment="Center" Margin="5" PlaceholderText="Lozinka" 
+                 PasswordChar="*" VerticalAlignment="Center" Width="270" FontSize="20" Grid.Row="2" Grid.ColumnSpan="2"/>
+        <PasswordBox x:Name="passwordBoxPotvrdaLozinke" HorizontalAlignment="Center" Margin="5" PlaceholderText="Potvrda lozinke" 
+                 PasswordChar="*" VerticalAlignment="Center" Width="270" FontSize="20" Grid.Row="3" Grid.ColumnSpan="2"/>
+        <TextBlock x:Name="label1" Grid.ColumnSpan="2" HorizontalAlignment="Center" Margin="7" Grid.Row="4" Text="Datum rođenja:" 
+                   VerticalAlignment="Bottom" FontSize="20"/>
+        <DatePicker x:Name="datePicker" Grid.ColumnSpan="2" HorizontalAlignment="Center" Margin="7" Grid.Row="5" VerticalAlignment="Top"/>
+        <Button x:Name="button1" Content="Registriraj se" Grid.ColumnSpan="2" HorizontalAlignment="Center" Margin="5" Grid.Row="7"
+                VerticalAlignment="Center" Width="230" FontSize="24" Click="button1_Click"/>
+        <StackPanel Grid.ColumnSpan="2" HorizontalAlignment="Center" Height="40" Margin="5" Grid.Row="6" VerticalAlignment="Center"
+                    Orientation="Horizontal" Width="270">
+            <RadioButton x:Name="radio1" Content="Žensko" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="15,0,0,0"/>
+            <RadioButton x:Name="radio2" Content="Muško" HorizontalAlignment="Center" VerticalAlignment="Center"  Margin="15,0,0,0"/>
+        </StackPanel>
+        <TextBlock Grid.Column="0" Grid.Row="7" x:Name="Greska" Foreground="Red" Margin="5"
+                   Grid.ColumnSpan="2" VerticalAlignment="Bottom" HorizontalAlignment="Center" FontWeight="Bold"/>
+        <Button Grid.Column="0" Grid.Row="8" HorizontalAlignment="Left" VerticalAlignment="Center" Width="160" Margin="15,0,0,0"
+                Height="37" Content="Natrag" FontSize="22" Padding="0" Background="LightSlateGray" Click="Button_Click"/>
+
+
+    </Grid>
+</Page>
