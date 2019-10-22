@@ -1,0 +1,27 @@
+C:\Users\Marko\Desktop\NMK2 - Copy\NMK2\bin\Debug\NMK2.exe.config
+C:\Users\Marko\Desktop\NMK2 - Copy\NMK2\bin\Debug\NMK2.exe
+C:\Users\Marko\Desktop\NMK2 - Copy\NMK2\bin\Debug\NMK2.pdb
+C:\Users\Marko\Desktop\NMK2 - Copy\NMK2\obj\Debug\NMK2.csprojResolveAssemblyReference.cache
+C:\Users\Marko\Desktop\NMK2 - Copy\NMK2\obj\Debug\NMK2.Form1.resources
+C:\Users\Marko\Desktop\NMK2 - Copy\NMK2\obj\Debug\NMK2.Form2.resources
+C:\Users\Marko\Desktop\NMK2 - Copy\NMK2\obj\Debug\NMK2.Form3.resources
+C:\Users\Marko\Desktop\NMK2 - Copy\NMK2\obj\Debug\NMK2.Form4.resources
+C:\Users\Marko\Desktop\NMK2 - Copy\NMK2\obj\Debug\NMK2.Properties.Resources.resources
+C:\Users\Marko\Desktop\NMK2 - Copy\NMK2\obj\Debug\NMK2.csproj.GenerateResource.Cache
+C:\Users\Marko\Desktop\NMK2 - Copy\NMK2\obj\Debug\NMK2.csproj.CoreCompileInputs.cache
+C:\Users\Marko\Desktop\NMK2 - Copy\NMK2\obj\Debug\NMK2.exe
+C:\Users\Marko\Desktop\NMK2 - Copy\NMK2\obj\Debug\NMK2.pdb
+C:\Users\Marko\Desktop\NMK2\NMK2\bin\Debug\NMK2.exe.config
+C:\Users\Marko\Desktop\NMK2\NMK2\bin\Debug\NMK2.exe
+C:\Users\Marko\Desktop\NMK2\NMK2\bin\Debug\NMK2.pdb
+C:\Users\Marko\Desktop\NMK2\NMK2\obj\Debug\NMK2.csprojResolveAssemblyReference.cache
+C:\Users\Marko\Desktop\NMK2\NMK2\obj\Debug\NMK2.Form1.resources
+C:\Users\Marko\Desktop\NMK2\NMK2\obj\Debug\NMK2.Form2.resources
+C:\Users\Marko\Desktop\NMK2\NMK2\obj\Debug\NMK2.Form4.resources
+C:\Users\Marko\Desktop\NMK2\NMK2\obj\Debug\NMK2.Properties.Resources.resources
+C:\Users\Marko\Desktop\NMK2\NMK2\obj\Debug\NMK2.csproj.GenerateResource.Cache
+C:\Users\Marko\Desktop\NMK2\NMK2\obj\Debug\NMK2.csproj.CoreCompileInputs.cache
+C:\Users\Marko\Desktop\NMK2\NMK2\obj\Debug\NMK2.exe
+C:\Users\Marko\Desktop\NMK2\NMK2\obj\Debug\NMK2.pdb
+C:\Users\Marko\Desktop\NMK2\NMK2\obj\Debug\NMK2.UserControl1.resources
+C:\Users\Marko\Desktop\NMK2\NMK2\obj\Debug\NMK2.Form5.resources

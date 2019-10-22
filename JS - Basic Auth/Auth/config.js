@@ -1,0 +1,3 @@
+module.exports = {
+    'secret': 'secretval'  // env variables...
+}
