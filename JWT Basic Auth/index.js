@@ -10,7 +10,7 @@ app.use('/users', UserController);
 app.use('/auth', AuthController);
 
 app.listen(port, () => {
-    console.log('Podignut server na portu', port);
+    console.log('Server at port ', port);
 })
 
 module.exports = app;
