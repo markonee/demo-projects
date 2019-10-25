@@ -1,0 +1,115 @@
+@import url(http://fonts.googleapis.com/css?family=Gabriela);
+body{
+    font-family: 'Gabriela';
+    padding: 0;
+    margin: auto;
+    /*display: flex;
+    flex-direction: column;*/
+}
+#header{
+    background: #ffff99;
+    padding: 1%;
+    position: relative;
+    border-top: 2px solid blue;
+    border-bottom: 2px solid blue;
+    border-left: 1px solid blue;
+    border-right: 1px solid blue;
+}
+#logo{
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    margin-top: 2%;
+    margin-left: 2%;
+
+    background: url(home-icon.png);
+    width: 4em;
+    height: 4em;
+    background-size: 100%;  
+}
+h1{
+    text-align: right;
+}
+#glavniSadrzaj{
+    max-width: 85%;
+    background:lightgray;
+    margin: auto;
+    text-align: center;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+#meni > ul{
+    padding: 0;
+    margin: auto;
+}
+#meni > ul > li{
+    list-style:none;
+    display: inline;
+    padding: 1%;
+    font-size: 0.7em;
+}
+#footer{
+    text-align: center;
+    width: 100%;
+    /*bottom: 0;
+    position: fixed;*/
+    background: cornflowerblue;
+    border-top: 2px solid blue;
+}
+table{
+    margin: 0 auto;
+    padding: 1%;
+    width: 50%;
+}
+td{
+    padding: 1%;
+    width: 100%;
+}
+
+form[name="fPojedinacni"]{
+    background: lightblue;
+    padding: 5% 2%;
+    margin: 1%;
+}
+
+input[name="key"], input[name="secret"], select[name="sGodina"]{
+    width: 100%;
+}
+
+@media (max-width: 600px) {
+    #glavniSadrzaj{
+        width: 100%;
+        padding-left: 0%;
+        padding-right: 0%;
+	max-width: 100%;
+    }
+
+    #meni{
+        grid-area: main;  
+        font-size: 0.8em; 
+    }
+
+    #header{
+        display: grid;
+        grid-template-areas:
+        'menu . . .'
+        '.  .  .main'
+        '. .  .footer';
+    }
+        
+    #meni>ul{
+        margin-left: 10%;
+    }
+
+    h1{
+        grid-area: footer;
+    }
+
+    #logo{
+        grid-area: menu;
+        height: 1em;
+        width: 1em;
+    }
+}
+
+

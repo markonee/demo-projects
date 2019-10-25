@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="bs">
+    <head>
+        <title>
+            Dodavanje godine
+        </title>
+        <link rel="stylesheet" href="addGodinastil.css">
+    </head>
+    <body>       
+         <div id="header">
+            <h1>
+                   Dodavanje godine
+            </h1>
+            <div id="meni">     
+                <ul id="opcije">         
+                    <li>
+                        <a href="zadaci.html">Pregled godina</a>
+                    </li>
+                    <li>
+                        <a href="addGodina.html">Dodavanje godine</a>
+                    </li>
+                    <li>
+                        <a href="studenti.html">Pregled studenata</a>
+                    </li>
+                    <li>
+                        <a href="commiti.html">Pregled commita</a>
+                    </li>
+                    <li>
+                        <a href="addZadatak.html">Dodavanje zadatka</a>
+                    </li>
+                    <li>
+                        <a href="addVjezba.html">Dodavanje vjezbe</a>
+                    </li>
+                    <li>
+                        <a href="addStudent.html">Dodavanje studenta</a>
+                    </li>
+                    <li>
+                        <a href="login.html">Login</a>
+                    </li>    
+                </ul>
+            </div>
+            <div id="logo">
+                
+            </div>  
+        </div>
+        
+        <div id="kontejner">
+            <div id="side">          
+                <form name="forma" id="forma" action="http://localhost:8080/addGodina" method="POST" onsubmit="return istina();">
+                    <div id="tekstPrvi">
+                            Unos godine:
+                    </div>
+
+                    <br>
+                    
+                    <div id="divPoruka"></div>
+
+                    <table id="t1">
+                        <tr>
+                            <td colspan="2">
+                                Naziv godine
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">
+                                <input type="text" name="nazivGod" id="naziv" required>
+                            </td>
+                        <tr>
+                            <td colspan="2">
+                                Nazivi repozitorija vjezbe
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">
+                                <input type="text" name="nazivRepVje" id="repozitorijVjezba" required>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">
+                                Nazivi repozitorija spirale
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">
+                                <input type="text" name="nazivRepSpi" id="repozitorijSpirala" required>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">
+
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="submit" name="submit" id="submit" value="Unesi">
+                            </td>
+                            <td>
+                                <input type="reset" name="reset" value="Ponisti">
+                            </td>
+                        </tr>
+                    </table>
+                </form>
+
+            </div>
+            <div id="glavniSadrzaj">
+ 
+            </div>
+        </div>
+  
+        <div id="footer">
+            &copy; Web tehnologije 2018/19
+        </div>  
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="GodineAjax.js"></script>
+        <script src="validacija.js"></script>
+        <script src="addGodina.js"></script>
+
+    </body>
+</html>

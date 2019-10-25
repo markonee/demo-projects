@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="bs">
+
+<head>
+    <title>
+        Dodavanje vjezbe
+    </title>
+
+    <link rel="stylesheet" href="addVjezbastil.css">
+</head>
+
+<body>
+    <div id="header">
+        <h1>
+            Dodavanje vjezbe/spirale
+        </h1>
+        <div id="meni">
+            <ul id="opcije">
+                <li>
+                    <a href="zadaci.html">Pregled godina</a>
+                </li>
+                <li>
+                    <a href="addGodina.html">Dodavanje godine</a>
+                </li>
+                <li>
+                    <a href="studenti.html">Pregled studenata</a>
+                </li>
+                <li>
+                    <a href="commiti.html">Pregled commita</a>
+                </li>
+                <li>
+                    <a href="addZadatak.html">Dodavanje zadatka</a>
+                </li>
+                <li>
+                    <a href="addVjezba.html">Dodavanje vjezbe</a>
+                </li>
+                <li>
+                    <a href="addStudent.html">Dodavanje studenta</a>
+                </li>
+                <li>
+                    <a href="login.html">Login</a>
+                </li>
+            </ul>
+        </div>
+        <div id="logo">
+
+        </div>
+    </div>
+
+    <div id="glavniSadrzaj">
+        <div id="prviDio">
+            <form name="fPostojeca" action="http://localhost:8080/addVjezba" method="POST">
+                <div id="tekstPrvi">
+                    Dodavanje postojece vjezbe/spirale
+                </div>
+
+                <br>
+
+                <div id="divPoruka"></div>
+                <table id="t1">
+                    <tr>
+                        <td>
+                            Godina
+                        </td>
+                        <td>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <select id="sGodine" name="sGodine">
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            Vjezbe/Spirale
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <select id="sVjezbe" name="sVjezbe">
+                            </select>
+                        </td>
+                    </tr>
+
+                </table>
+                <input type="submit" name="submitPostojeca" id="dodajPostojeca" value="Dodaj">
+            </form>
+
+        </div>
+
+        <div id="drugiDio">
+            <form name="fNova" action="http://localhost:8080/addVjezba" method="POST" onsubmit="return provjeriNova();">
+
+                <div id="tekstDrugi">
+                    Nova vjezba/spirala
+                </div>
+
+                <br>
+
+                <div id="divPorukaDva"></div>
+                <table id="t4">
+                    <tr>
+                        <td>
+                            Naziv vjezbe
+                        </td>
+                        <td>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <input type="text" id="nazivVjezbe" name="naziv" required>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            Godina
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <select name="sGodine" id="sGodineNova">
+                            </select>
+                        </td>
+                    </tr>
+                </table>
+
+                <table id="t3">
+                    <tr>
+                        <td>
+                            <input type="checkbox" name="spirala" value="Spirala">
+                            Spirala
+                        </td>
+                        <td>
+                            <input type="submit" id="dodajNova" name="submitNova" value="Dodaj">
+                        </td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+        <div id="treciDio">
+            <form name="fPoveziZadatak" id="fPoveziZadatak" method="POST" action="#">
+                <div id="tekstTreci">
+                    Dodavanje zadataka na vježbu
+                </div>
+                <table id="t5">
+                    <tr>
+                        <td>
+                            Naziv vjezbe
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <select id="sVjezbePovezi" name="sVjezbe">
+
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Zadaci
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <select id="sZadatak" name="sZadatak">
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="submit" name="dZadatak" value="Dodaj zadatak">
+                        </td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+    </div>
+
+    <div id="footer">
+        &copy; Web tehnologije 2018/19
+    </div>
+
+    <script src="validacija.js"></script>
+    <script src="addVjezba.js"></script>
+    <script src="addVjezbaDB.js"></script>
+</body>
+
+</html>

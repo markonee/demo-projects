@@ -1,0 +1,25 @@
+body{
+    background:	#6699ff;
+    margin: 0px;
+}
+#login{
+    background: lightgray;
+    padding: 5%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+input[type="button"]{
+    border-radius: 50%;
+    width: 50%;
+}
+table{
+    border-spacing: 0.5em;
+}
+td{
+    padding: 5%;
+}
+tr{
+    text-align: center;
+}

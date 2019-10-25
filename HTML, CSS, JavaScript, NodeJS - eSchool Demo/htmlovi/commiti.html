@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="bs">
+    <head>
+        <title>
+            Commiti
+        </title>
+        
+        <link rel="stylesheet" href="commitistil.css">
+    </head>
+
+    <body>
+        <div id="header">
+            <h1>
+                   Pregled commita
+            </h1>
+            <div id="meni">     
+                <ul id="opcije">           
+                     <li>
+                        <a href="zadaci.html">Pregled godina</a>
+                    </li>
+                    <li>
+                        <a href="addGodina.html">Dodavanje godine</a>
+                    </li>
+                    <li>
+                        <a href="studenti.html">Pregled studenata</a>
+                    </li>                    
+                    <li>
+                        <a href="commiti.html">Pregled commita</a>
+                    </li>
+                    <li>
+                        <a href="addZadatak.html">Dodavanje zadatka</a>
+                    </li>
+                    <li>
+                        <a href="addVjezba.html">Dodavanje vjezbe</a>
+                    </li>
+                    <li>
+                        <a href="addStudent.html">Dodavanje studenta</a>
+                    </li>
+                    <li>
+                        <a href="login.html">Login</a>
+                    </li>
+                </ul>
+            </div>
+            <div id="logo">
+ 
+            </div>  
+        </div>
+        
+        <div id="kontejner">
+            <div id="podaci">
+                    Student: Neko Nekic, 12345 <br>
+                    Naziv vjezbe/spirale: Vjezba 1 <br>
+                    Repozitorij: <a href="https://bitbucket.org">Hyperlink</a>
+                    <br>
+            </div>
+            <div id="forma">
+                <br>
+        
+                <div id="opcijeTabela">
+                    <div id="opcijeKreiranje">
+                        Broj redova:
+                        <br>
+                        <input type="number" id="brojRedova" min="0" placeholder="Unesite broj redova..">
+                        <br>
+                        <br>
+                        <input type="button" id="button1" value="Kreiraj tabelu">
+                    </div>
+
+                    <div id="opcijeDodavanje">
+                        <div id="porukaDodaj"></div>
+                        <br>
+
+                        Broj reda:
+                        <br>
+                        <input type="number" id="brojReda" min="0" placeholder="Unesite broj reda..">  
+                        <br>
+
+                        URL:
+                        <br>
+                        <input type="text" id="urlDodaj" placeholder="URL commita..">
+                        <br>
+                        <br>
+                        <input type="button" id="button2" value="Dodaj commit" disabled="true">         
+                    </div>
+
+                    <div id="opcijeBrisanje">
+                        Broj reda:
+                        <br>
+                        <input type="number" id="brojRedaBrisanje" min="0" placeholder="Unesite broj reda..">  
+                        <br>
+
+                        Broj commita:
+                        <br>
+                        <input type="number" id="brojCommitaBrisanje" min="0" placeholder="Unesite broj commita..">
+                        <br>
+                        <br>
+                        <input type="button" id="button3" value="Obrisi commit" disabled="true">                      
+                    </div>
+
+                    <div id="opcijeEdit">
+                        <div id="porukaEdituj"></div>
+
+                        Broj reda:
+                        <br>
+                        <input type="number" id="brojRedaEdit" min="0" placeholder="Unesite broj reda..">  
+                        <br>  
+                    
+                        Broj commita: 
+                        <br>
+                        <input type="number" id="brojCommitaEdit" min="0" placeholder="Unesite broj commita..">     
+                        <br>
+                    
+                        URL:
+                        <br>
+                        <input type="text" id="urlEdit" placeholder="Novi URL.."> 
+                        <br> 
+                        <br>
+                        <input type="button" id="button4" value="Edituj commit" disabled="true">
+                    </div>
+                </div>
+            </div>
+            <div id="commit">
+                
+            </div>
+        </div>
+
+        <div id="footer">
+            &copy; Web tehnologije 2018/19
+        </div>  
+        <script src="committabela.js"></script>
+        <script src="commiti.js"></script> 
+        <script src="validacija.js"></script>
+    </body>
+</html>

@@ -1,0 +1,159 @@
+@import url(http://fonts.googleapis.com/css?family=Gabriela);
+
+body{
+    font-family: 'Gabriela';
+    padding: 0;
+    margin: auto;
+    /*display: flex;
+    flex-direction: column;*/
+}
+
+#header{
+    background: #ffff99;
+    padding: 1%;
+    position: relative;
+    border-top: 2px solid blue;
+    border-left: 1px solid blue;
+    border-right: 1px solid blue;
+}
+#logo{
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    margin-top: 2%;
+    margin-left: 2%;
+
+    background: url(home-icon.png);
+    width: 4em;
+    height: 4em;
+    background-size: 100%;  
+    background-repeat: no-repeat;
+}
+#footer{
+    text-align: center;
+    width: 100%;
+    /*bottom: 0;
+    position: fixed;*/
+    background: cornflowerblue;
+}
+h1{
+    text-align: right;
+}
+#meni > ul{
+    padding: 0;
+    margin: auto;
+}
+#meni > ul > li{
+    list-style:none;
+    display: inline;
+    padding: 1%;
+    font-size: 0.75em;
+}
+#side{
+    width: 35%;
+    text-align: center;
+    flex: auto;
+    background: grey;
+    padding: 2%;
+}
+#glavniSadrzaj{
+    border-top: 2px solid blue;
+
+    background:lightgrey;
+    min-width: 65%;
+    flex: auto;
+
+   
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
+
+}
+#kontejner{
+    display: flex;
+    flex-direction: row;
+    /*flex: 1;*/
+}
+table{
+    margin: 0 auto;
+    padding: 1%;
+    width: 60%;
+}
+td{
+    padding: 1%;
+    width: 50%;
+}
+input[name="naziv"], input[name="rvjezbe"], input[name="rspiral"]{
+    width: 100%;
+}
+input[name="submit"], input[name="reset"]{
+    width: 5em;
+}
+table#t1 tr:last-child td:last-child{
+    text-align: right;
+} 
+
+.godina{
+    background: skyblue;
+    margin: 2% 10%;
+    height: 10em;
+    width: 10em;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    position: relative;
+}
+.centar{
+    flex: auto;
+    margin: 1%;
+}
+.nVjezbe, .nSpirale{
+    font-weight: bold;
+}
+.vVjezbe, .vSpirale{
+    display: inline;
+    font-weight: normal;
+}
+
+@media (max-width: 600px) {
+    body, #kontejner{ 
+        display: flex;
+        flex-direction: column;
+    }
+
+    #header, #kontejner, #footer, #glavniSadrzaj, #side{
+        flex: auto;
+        width: auto;
+    }
+
+    #meni{
+        grid-area: main;  
+        font-size: 0.8em; 
+    }
+
+    #header{
+        display: grid;
+        grid-template-areas:
+        'menu . . .'
+        '.  .  .main'
+        '. .  .footer';
+    }
+        
+    #meni>ul{
+        margin-left: 10%;
+    }
+
+    h1{
+        grid-area: footer;
+    }
+
+    #logo{
+        grid-area: menu;
+        height: 1em;
+        width: 1em;
+    }
+}

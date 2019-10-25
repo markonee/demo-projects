@@ -1,0 +1,151 @@
+@import url(http://fonts.googleapis.com/css?family=Gabriela);
+body{
+    font-family: 'Gabriela';
+    padding: 0;
+    margin: auto;
+    /*display: flex;
+    flex-direction: column;*/
+}
+#header{
+    background: #ffff99;
+    padding: 1%;
+    position: relative;
+    border-top: 2px solid blue;
+    border-bottom: 2px solid blue;
+    border-left: 1px solid blue;
+    border-right: 1px solid blue;
+    margin-bottom: 0%;
+}
+#logo{
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    margin-top: 2%;
+    margin-left: 2%;
+
+    background: url(home-icon.png);
+    width: 4em;
+    height: 4em;
+    background-size: 100%;  
+}
+h1{
+    text-align: right;
+}
+#glavniSadrzaj{
+    width: 85%;
+    background:lightgray;
+    margin: auto;
+    text-align: center;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+#meni > ul{
+    padding: 0;
+    margin: auto;
+}
+#meni > ul > li{
+    list-style:none;
+    display: inline;
+    padding: 1%;
+    font-size: 0.75em;
+}
+#footer{
+    text-align: center;
+    width: 100%;
+    /*bottom: 0;
+    position: fixed;*/
+    background: cornflowerblue;
+    border-top: 2px solid blue;
+    margin-top: 0%;
+}
+table#t1, table#t3{
+    margin: auto;
+}
+table#t2{
+    background: white;
+    width: 100%;
+    text-align: left;
+}
+
+table{
+    width: 50%;
+    display: inline-table;
+}
+td{
+    padding: 1%;
+    width: 50%;
+}
+select[name="sGodine"], select[name="sVjezbe"], input[name="naziv"],
+select[name="sZadatak"]{
+    width: 100%;
+}
+form[name="fPostojeca"], form[name="fNova"], form[name="fPoveziZadatak"]{
+    background: lightblue;
+    margin: 1% 2%;
+    padding: 1em;
+}
+input[name="submitPostojeca"]{
+    width: 5em;
+    margin-left: 50%;
+    display: block;
+}
+input[name="submitNova"]{
+    width: 5em;
+}
+
+table#t3 tr:first-child td:last-child, table#t3 tr:last-child td:last-child{
+    text-align: right;
+} 
+table#t1 tr:first-child td:first-child, table#t3 tr:first-child td:first-child, 
+table#t3 tr:last-child td:first-child,table#t1 tr:nth-last-child(2) td:first-child, 
+table#t4 tr:first-child td:first-child,
+table#t4 tr:nth-child(3) td:first-child{
+    text-align: left;
+} 
+
+@media (max-width: 600px) {
+    body{ 
+        display: flex;
+        flex-direction: column;
+    }
+
+    #header, #footer, #glavniSadrzaj{
+        flex: auto;
+        width: auto;
+    }
+
+    #glavniSadrzaj{
+        padding: 0%;
+        width: 100%;
+    }
+
+    #meni{
+        grid-area: main;  
+        font-size: 0.8em; 
+        float: right;
+    }
+
+    #header{
+        display: grid;
+        grid-template-areas:
+        'menu . . .'
+        '.  .  . main'
+        '. .  . footer';
+    }
+        
+    #meni>ul{
+        margin-left: 10%;
+    }
+
+    h1{
+        grid-area: footer;
+        margin-top: 8%;
+    }
+
+    #logo{
+        grid-area: menu;
+        width: 1em;
+        height: 1em;
+    }
+
+}

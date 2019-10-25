@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="bs">
+    <head>
+        <title>
+            Dodavanje studenata
+        </title>
+        <link rel="stylesheet" href="addStudentstil.css">
+    </head>
+
+    <body>        
+        <div id="header">
+            <h1>
+                Dodavanje studenata
+            </h1>
+            <div id="meni">     
+                <ul id="opcije">           
+                    <li>
+                        <a href="zadaci.html">Pregled godina</a>
+                    </li>
+                    <li>
+                        <a href="addGodina.html">Dodavanje godine</a>
+                    </li>
+                    <li>
+                        <a href="studenti.html">Pregled studenata</a>
+                    </li>
+                    <li>
+                        <a href="commiti.html">Pregled commita</a>
+                    </li>
+                    <li>
+                        <a href="addZadatak.html">Dodavanje zadatka</a>
+                    </li>
+                    <li>
+                        <a href="addVjezba.html">Dodavanje vjezbe</a>
+                    </li>
+                    <li>
+                        <a href="addStudent.html">Dodavanje studenta</a>
+                    </li>
+                    <li>
+                        <a href="login.html">Login</a>
+                    </li>   
+                </ul>
+            </div>
+            <div id="logo">
+
+            </div> 
+        </div>
+        
+        <div id="glavniSadrzaj">    
+            <div id="prviDio">
+                <form name="fPojedinacni" action="#" onsubmit="return false;">
+                    <div id="tekstPrvi">
+                            Pojedinacni unos
+                    </div>
+
+                    <br>
+                    <div id="divPoruka"></div>
+
+
+                    <table id="t1">
+                        <tr>
+                            <td>
+                                Godina
+                            </td>
+                            <td>
+
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">
+                                <select id="sGodina" name="sGodina">                               
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">
+                                Key
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">
+                                <input type="text" name="key" id="key" required>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">
+                                Secret
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">
+                                <input type="text" id="secret" name="secret" required>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <button id="dUcitaj" name="dUcitaj" value="Učitaj">Učitaj</button>
+                                <input type="button" name="dDodaj" id="dDodaj" value="Dodaj" disabled>
+                            </td>
+                        </tr>
+                    </table>
+                </form>
+            </div>
+        </div>
+        
+        <div id="footer">
+                &copy; Web tehnologije 2018/19
+        </div>  
+        
+        <script src="BitBucket.js"></script>
+        <script src="addStudent.js"></script> 
+    </body>
+</html>

@@ -1,0 +1,164 @@
+@import url(http://fonts.googleapis.com/css?family=Gabriela);
+
+body{
+    margin: auto;
+    font-family: 'Gabriela';
+    /*display: flex;
+    flex-direction: column;*/
+}
+h1{
+    text-align: right;
+}
+#header{
+    background: #ffff99;
+    padding: 1%;
+    position: relative;
+    border-top: 2px solid blue;
+    border-bottom: 2px solid blue;
+    border-left: 1px solid blue;
+    border-right: 1px solid blue;
+}
+#logo{
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    margin-top: 2%;
+    margin-left: 2%;
+
+    background: url(home-icon.png);
+    width: 4em;
+    height: 4em;
+    background-size: 100%;  
+}
+#meni > ul{
+    padding: 0;
+    margin: auto;
+}
+#meni > ul > li{
+    list-style:none;
+    display: inline;
+    padding: 1%;
+    font-size: 0.8em;
+}
+#kontejner{
+    display: flex;
+    flex-direction: row;
+    /*flex: 1;
+    position: relative;*/
+}
+.cetvrtina{
+    width: 25%;
+    flex: auto;
+    text-align: center;
+    border-width: 2px;
+    border-style: solid;
+    border-color: blue;
+}
+#prvacetvrtina{
+    background: gray;
+}
+#drugacetvrtina{
+    background: lightslategray;
+}
+.polovina{
+    width: 50%;
+    flex: auto;
+    background: lightgray;
+    border-width: 2px;
+    border-style: solid;
+    border-color: blue;
+}
+#footer{
+    background: cornflowerblue;
+    text-align: center;
+    /*bottom: 0;
+    position: fixed;
+    width: 100%;*/
+}
+.cetvrtina > ul{
+    padding: 1%;
+    margin-right: 1%;
+    overflow-y: scroll;
+    border: 2px red;
+    height: 10%;
+    width: 90%;
+}
+.cetvrtina > ul > li{
+    list-style: none;
+}
+.cetvrtina > ul > li:hover{
+    background: white;
+}
+#prvacetvrtina > ul{
+    height: 50%;
+}
+#drugacetvrtina > ul{
+    height: 37%;
+}
+table{
+    width: 90%;
+    height: 10%;
+    display: inline-table;
+}
+form{
+    margin: 0;
+    padding: 0;
+}
+input[type="text"], input[type="submit"]{
+    width: 100%;
+}
+#vjezbe, #spirale{
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    background: whitesmoke;
+    margin: 5%;
+}
+#vjezbe > div, #spirale > div{
+    background: skyblue;
+    text-align: center;
+    font-size: 20px;
+    margin: 3%;
+}
+@media (max-width: 600px) {
+    #kontejner{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .polovina, .cetvrtina{
+        flex: auto;
+        width: auto;
+    }
+
+    #meni{
+        grid-area: main;  
+        font-size: 0.8em; 
+    }
+
+    #header{
+        display: grid;
+        grid-template-areas:
+        'menu . . .'
+        '.  .  .main'
+        '. .  .footer';
+    }
+        
+    #meni>ul{
+        margin-left: 10%;
+    }
+
+    #meni>ul>li{
+        font-size: 1em;
+    }
+
+    h1{
+        grid-area: footer;
+    }
+
+    #logo{
+        grid-area: menu;
+        height: 1em;
+        width: 1em;
+    }
+}

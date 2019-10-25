@@ -1,0 +1,121 @@
+@import url(http://fonts.googleapis.com/css?family=Gabriela);
+body{
+    font-family: 'Gabriela';
+    padding: 0;
+    margin: auto;
+    /*display: flex;
+    flex-direction: column;*/
+}
+#header{
+    background: #ffff99;
+    padding: 1%;
+    position: relative;
+    border-top: 2px solid blue;
+    border-bottom: 2px solid blue;
+    border-left: 1px solid blue;
+    border-right: 1px solid blue;
+}
+#logo{
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    margin-top: 2%;
+    margin-left: 2%;
+
+    background: url(home-icon.png);
+    width: 4em;
+    height: 4em;
+    background-size: 100%;  
+}
+h1{
+    text-align: right;
+}
+#glavniSadrzaj{
+    width: 85%;
+    background:lightgray;
+    margin: auto;
+    text-align: center;
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+#meni > ul{
+    padding: 0;
+    margin: auto;
+}
+#meni > ul > li{
+    list-style:none;
+    display: inline;
+    padding: 1%;
+    font-size: 0.8em;
+}
+#parent{
+    width: 80%;
+    margin: auto;
+    padding: 0% 2% 2% 2%;
+    background: lightblue;
+}
+#footer{
+    text-align: center;
+    width: 100%;
+    /*bottom: 0;
+    position: fixed;*/
+    background: cornflowerblue;
+    border-top: 2px solid blue;
+}
+#glavniForma{
+    text-align: center;
+    padding: 3%;
+}
+table{
+    margin: 0 auto;
+    width: 50%;
+}
+td{
+    padding: 1%;
+    width: 50%;
+}
+#naslov{
+    padding: 1%;
+}
+input[type="submit"]{
+    width: 5em;
+    margin-right: -30%;
+}
+#combobox, input[name="naziv"], input[name="postavka"], td{
+    width: 100%;
+}
+table#t3 tr:first-child td:last-child, table#t3 tr:last-child td:last-child{
+    text-align: right;
+} 
+@media (max-width: 600px) {
+    #glavniSadrzaj{
+        width: 100%;
+    }
+
+    #meni{
+        grid-area: main;  
+        font-size: 0.8em; 
+    }
+
+    #header{
+        display: grid;
+        grid-template-areas:
+        'menu . . .'
+        '.  .  .main'
+        '. .  .footer';
+    }
+        
+    #meni>ul{
+        margin-left: 10%;
+    }
+
+    h1{
+        grid-area: footer;
+    }
+
+    #logo{
+        grid-area: menu;
+        width: 1em;
+        height: 1em;
+    }
+}

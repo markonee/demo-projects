@@ -1,0 +1,129 @@
+@import url(http://fonts.googleapis.com/css?family=Gabriela);
+body{
+    font-family: 'Gabriela';
+    padding: 0;
+    margin: auto;
+    /*display: flex;
+    flex-direction: column;*/
+}
+#header{
+    background: #ffff99;
+    padding: 1%;
+    position: relative;
+    border-top: 2px solid blue;
+    border-left: 1px solid blue;
+    border-right:1px solid blue;
+}
+#side{
+    background-color: cornsilk;
+    width: 35%;
+    text-align: center;
+    padding-top: 1%;
+    flex: auto;
+}
+#glavniSadrzaj{
+    background:burlywood;
+    width: 65%;
+    flex: auto;
+    padding-top: 1%;
+    border-top: 1px solid blue;
+}
+#logo{
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    margin-top: 2%;
+    margin-left: 2%;
+
+    background: url(home-icon.png);
+    width: 4em;
+    height: 4em;
+    background-size: 100%;  
+}
+#footer{
+    text-align: center;
+    width: 100%;
+    /*bottom: 0;
+    position: fixed;*/
+    background: cornflowerblue;
+}
+table{
+    border-collapse: collapse;
+    font-family: 'Gabriela';
+    width: 99.9%;
+    padding: 3%;
+}
+td, th {
+    border: 2px solid black;
+    padding: 8px;
+}
+th{
+    background: lightgrey;
+}
+h1{
+    text-align: right;
+}
+#meni > ul{
+    padding: 0;
+    margin: auto;
+}
+#meni > ul > li{
+    list-style:none;
+    display: inline;
+    padding: 1%;
+    font-size: 0.8em;
+}
+#side > ul{
+    padding: 1%;
+    overflow-y: scroll;
+    border: 2px solid gray;
+    height: 10em;
+}
+#side > ul > li{
+    list-style: none;
+}
+#side > ul > li:hover{
+    background:lightgray;
+}
+#kontejner{
+    display: flex;
+    flex-direction: row;
+    /*flex: 1;*/
+}
+@media (max-width: 600px) {
+    #kontejner{
+        display: flex;
+        flex-direction: column;
+    }
+    #side, #glavniSadrzaj{
+        flex: auto;
+        width: auto;
+    }
+
+    #meni{
+        grid-area: main;  
+        font-size: 0.8em; 
+    }
+
+    #header{
+        display: grid;
+        grid-template-areas:
+        'menu . . .'
+        '.  .  .main'
+        '. .  .footer';
+    }
+        
+    #meni>ul{
+        margin-left: 10%;
+    }
+
+    h1{
+        grid-area: footer;
+    }
+
+    #logo{
+        grid-area: menu;
+        height: 1em;
+        width: 1em;
+    }
+}

@@ -1,0 +1,119 @@
+@import url(http://fonts.googleapis.com/css?family=Gabriela);
+
+body{
+    margin: auto;
+    font-family: 'Gabriela';
+    /*display: flex;
+    flex-direction: column;*/
+}
+h1{
+    text-align: right;
+}
+
+#opcijeTabela{
+    display: flex;
+}
+
+#opcijeTabela > div{
+    width: 33%;
+    flex: auto;
+    text-align: center;
+    padding: 2%;
+    border: 2px solid gray;
+}
+
+#header{
+    background: #ffff99;
+    padding: 1%;
+    position: relative;
+    border-top: 2px solid blue;
+    border-bottom: 2px solid blue;
+    border-left:1px solid blue;
+    border-right:1px solid blue;
+}
+#logo{
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    margin-top: 2%;
+    margin-left: 2%;
+
+    background: url(home-icon.png);
+    width: 4em;
+    height: 4em;
+    background-size: 100%;  
+}
+#meni > ul{
+    padding: 0;
+    margin: auto;
+}
+#meni > ul > li{
+    list-style:none;
+    display: inline;
+    padding: 1%;
+    font-size: 0.8em;
+}
+#footer{
+    background: cornflowerblue;
+    text-align: center;
+    /*bottom: 0;
+    position: fixed;
+    width: 100%;*/
+    border-top: 2px solid blue;
+}
+table{
+    border-collapse: collapse;
+    width: 100%;
+}
+#kontejner{
+    padding: 4%;
+}
+th, td{
+    border: solid 2px black;
+    text-align: center;
+}
+th{
+    background:lightgray;  
+}
+
+@media (max-width: 600px) {
+    #meni{
+        grid-area: main;  
+        font-size: 0.8em; 
+    }
+
+    #header{
+        display: grid;
+        grid-template-areas:
+        'menu . . .'
+        '.  .  .main'
+        '. .  .footer';
+    }
+        
+    #meni>ul{
+        margin-left: 10%;
+    }
+
+    #meni>ul >li{
+        font-size: 1em;
+    }
+
+    h1{
+        grid-area: footer;
+    }
+
+    #logo{
+        grid-area: menu;
+        height: 1em;
+        width: 1em;
+    }
+
+    #opcijeTabela{
+        flex-direction: column;
+    }
+    
+    #opcijeTabela > div{
+        width: auto;
+        height: auto;
+    }
+}
