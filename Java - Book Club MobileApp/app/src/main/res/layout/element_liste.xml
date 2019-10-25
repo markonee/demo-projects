@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+<RelativeLayout
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/eNaslovna"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:contentDescription="@string/opisSlika"
+        android:scaleType="fitXY"
+        app:srcCompat="@android:color/darker_gray" />
+
+    <TextView
+        android:id="@+id/eNaziv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/eNaslovna"
+        android:layout_marginTop="20dp"
+        android:layout_toEndOf="@+id/eNaslovna"
+        android:layout_toRightOf="@+id/eNaslovna"
+        android:contentDescription="@string/opisNaziv"
+        android:gravity="center"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:layout_marginRight="10dp"
+        android:maxLines="2"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/eAutor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/eNaslovna"
+        android:layout_alignLeft="@+id/eNaziv"
+        android:layout_alignStart="@+id/eNaziv"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginRight="10dp"
+        android:contentDescription="@string/opisIme"
+        android:gravity="center"
+        android:maxLines="3"
+        android:textAlignment="center"
+        android:textSize="20sp" />
+
+</RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/dPreporuci"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:text="@string/dPreporuci"
+            tools:text="@string/dPreporuci" />
+
+        <Button
+            android:id="@+id/dOznaci"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/dOznaci" />
+
+        <TextView
+            android:id="@+id/datumObjaveLab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:text="@string/datObjave"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            tools:text="@string/datObjave" />
+
+        <TextView
+            android:id="@+id/eDatumObjavljivanja"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/eOpis"
+            android:layout_alignParentEnd="true"
+            android:layout_gravity="center"
+            android:layout_marginTop="5dp"
+            android:contentDescription="@string/opisIme"
+            android:gravity="center"
+            android:textAlignment="center"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/opisLab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:text="@string/opisLab"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            tools:text="@string/opisLab" />
+
+        <TextView
+            android:id="@+id/eOpis"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/eBrojStranica"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="5dp"
+            android:contentDescription="@string/opisIme"
+            android:gravity="center"
+            android:textAlignment="center"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/BrojStranicaLab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:text="@string/brStrLab"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            tools:text="@string/brStrLab" />
+
+        <TextView
+            android:id="@+id/eBrojStranica"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginBottom="119dp"
+            android:layout_marginTop="5dp"
+            android:contentDescription="@string/opisIme"
+            android:gravity="center"
+            android:textAlignment="center"
+            android:textSize="14sp" />
+
+    </LinearLayout>
+</LinearLayout>

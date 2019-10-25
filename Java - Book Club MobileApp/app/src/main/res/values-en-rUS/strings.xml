@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Spirala2_17983</string>
+    <string name="dugmePretraga">Search</string>
+    <string name="dugmeKategorija">Add category</string>
+    <string name="dugmeKnjiga">Add book</string>
+    <string name="opisSlika">Book frontpage</string>
+    <string name="autorHint">Author\'s name</string>
+    <string name="nazivHint">Book title</string>
+    <string name="opisSpinera">Book category</string>
+    <string name="tekstPonisti">Decline</string>
+    <string name="upisiKnjigu">Save new book</string>
+    <string name="dNadjiSliku">Browse picture</string>
+    <string name="dPovratak">Back</string>
+    <string name="opisIme">Author</string>
+    <string name="opisNaziv">Book title</string>
+    <string name="hintKategorija">Book category</string>
+    <string name="dKategorijeText">Show categories</string>
+    <string name="dAutoriText">Show authors</string>
+    <string name="dDodajOnline">Add book online</string>
+    <string name="tekstUpit">Book title</string>
+    <string name="textViewKat">Categories:</string>
+    <string name="textViewKnjige">Books:</string>
+    <string name="dRun">Search</string>
+    <string name="dAdd">Add book</string>
+</resources>
