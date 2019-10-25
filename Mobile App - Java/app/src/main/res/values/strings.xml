@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">Spirala2_17983</string>
+    <string name="dugmePretraga">Pretraži</string>
+    <string name="dugmeKategorija">Dodaj kategoriju</string>
+    <string name="dugmeKnjiga">Dodaj knjigu</string>
+    <string name="opisSlika">Naslovna strana knjige</string>
+    <string name="autorHint">Ime autora</string>
+    <string name="nazivHint">Naziv knjige</string>
+    <string name="opisSpinera">Kategorija knjige</string>
+    <string name="tekstPonisti">Poništi</string>
+    <string name="upisiKnjigu">Upiši knjigu</string>
+    <string name="dNadjiSliku">Nađi sliku</string>
+    <string name="dPovratak">Povratak nazad</string>
+    <string name="opisIme">Ime autora</string>
+    <string name="opisNaziv">Naziv knjige</string>
+    <string name="hintKategorija">Naziv kategorije</string>
+    <string name="dKategorijeText">Prikaži kategorije</string>
+    <string name="dAutoriText">Prikaži autore</string>
+    <string name="dDodajOnline">Dodaj knjigu online</string>
+    <string name="tekstUpit">Unesite naziv knjige</string>
+    <string name="textViewKat">Lista kategorija:</string>
+    <string name="textViewKnjige">Lista knjiga:</string>
+    <string name="dRun">Pretraga</string>
+    <string name="dAdd">Dodaj knjigu</string>
+    <string name="datObjave">Datum objave</string>
+    <string name="opisLab">Opis</string>
+    <string name="brStrLab">Broj stranica</string>
+    <string name="dPreporuci">Preporuči knjigu</string>
+    <string name="kontaktiLab">Kontakti</string>
+    <string name="dPosaljiLab">Pošalji mail</string>
+    <string name="dOznaci">Označi/ukloni oznaku</string>
+</resources>
