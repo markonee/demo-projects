@@ -1,0 +1,1 @@
+Application (with mock data) available at https://dissident.herokuapp.com.
